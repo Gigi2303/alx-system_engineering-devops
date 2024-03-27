@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+## a script which will allow one to acces the server without typing a password
+
+Host 54.208.137.176
+    IdentityFile ~/.ssh/school
+    PreferredAuthentications publickey
+    PasswordAuthentication no
