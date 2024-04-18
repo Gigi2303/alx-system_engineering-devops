@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 ## This script will be creating an rsa key pair with a name school and bits should be 4096 the paraphrase being betty
 
-ssh-keygen -t rsa -b 4096 -N "betty" -f ~/.ssh/school
+ssh-keygen -t rsa -b 4096 -f school -N betty
