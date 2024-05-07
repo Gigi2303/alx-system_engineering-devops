@@ -3,8 +3,8 @@
 import requests
 
 ""
-a script that Writes a function that queries the Reddit API
-and returns the number of subscribers
+a script that Writes a function that queries the Reddit API,
+returns the number of subscribers
 ""
 
 
@@ -18,6 +18,6 @@ def number_of_subscribers(subreddit):
 
     if response.status_code == 200:
         data = response.json()
-        return data['data']['subscribers']
-    else
+        return response.json().get('data', {}).get('subscribers', 0)
+    else:
     return 0
